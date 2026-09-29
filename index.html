@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Player de Musica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1> Meu Player de Musica</h1>
+    <section class="carrossel">
+
+   <button onclick="anterior()"></button>
+
+       <div class="area-cards">
+         <div class="cards" id="cards">
+
+    <div class="card" onclick="tocar(0)">
+ <div class="capa"></div>
+  <h2>Musica 1</h2>
+  <p>Artista 1</p>
+                </div>
+
+                <div class="card" onclick="tocar(1)">
+                    <div class="capa"></div>
+                    <h2>Musica 2</h2>
+                    <p>Artista 2</p>
+                </div>
+
+                <div class="card" onclick="tocar(2)">
+      <div class="capa"></div>
+             <h2>Musica 3</h2>
+                    <p>Artista 3</p>
+                </div>
+
+            </div>
+        </div>
+
+        <button onclick="proximo()"></button>
+
+    </section>
+
+    <h2>Lista de Musicas</h2>
+
+    <div class="lista">
+        <audio controls>
+    <source src="ytmp3free.cc_cleiton-rasta-cabea-de-gelo-480p-youtubemp3free.org.mp3" type="audio/mpeg">
+</audio>
+        <div onclick="tocar(0)">
+             CABELA DE GELO - Artista 1
+        </div>
+<audio controls>
+    <source src="ytmp3free.cc_mc-poze-nos-anos-80-youtubemp3free.org.mp3" type="audio/mpeg">
+</audio>
+        <div onclick="tocar(1)">
+             Musica MC POZE NOS ANOS 80- Artista 2
+        </div>
+<audio controls>
+    <source src="ytmp3free.cc_shakira-waka-waka-this-time-for-africa-the-official-2010-fifa-world-cup-song-youtubemp3free.org.mp3" type="audio/mpeg">
+</audio>
+        <div onclick="tocar(2)">
+             SHAKIRA WAKA WAKA - Artista 3
+        </div>
+    </div>
+
+    <div class="player">
+        <h2 id="titulo">Escolha uma musica</h2>
+        <p id="artista">Nenhuma musica selecionada</p>
+
+        <audio id="audio" controls>
+            <source id="arquivo" src="" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
